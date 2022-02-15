@@ -314,7 +314,8 @@ header{
     max-width: 1140px;
     margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .section-projects--photo{
