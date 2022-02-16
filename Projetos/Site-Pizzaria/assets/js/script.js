@@ -1,6 +1,5 @@
 const c = el => document.querySelector(el);       //Váriavel para selcionar um elemento.
-const c = el => document.querySelector(el);       //Váriavel para selcionar vários elemento.
-const cs = el => document.querySelectorAll(el);
+const cs = el => document.querySelectorAll(el);   //Váriavel para selcionar vários elemento.
 
 let modalQt = 1;    // Variável para setar uma valor padrão a quantidade de pizzas.
 let cart = [];      // Variável do carrinho de compras. 
