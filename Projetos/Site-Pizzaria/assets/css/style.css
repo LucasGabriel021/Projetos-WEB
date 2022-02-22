@@ -266,7 +266,9 @@ main {
     }
 
 .pizzaInfo--qt {
-    font: bold 12px/30px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 30px;
     padding: 0px 5px;
     color:#000;
 }
@@ -337,7 +339,9 @@ main {
     }
 
 .cart--item--qt {
-    font: bold 12px/30px;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: bold;
     padding: 0px 5px;
     color:#000;
 }

@@ -118,6 +118,10 @@ c('.menu-closer').addEventListener('click', () => {
      c('aside').style.left = '100vw';
 });
 
+//Função de finalizar a compra
+function clear() {
+     c('.menu-openner span').innerHTML = '0';
+}
 
 // Função para preencher o carrinho e mostrar na tela
 function updateCart () {
@@ -177,6 +181,11 @@ function updateCart () {
           c('.subtotal span:last-child').innerHTML = `R$: ${subtotal.toFixed(2)}`;
           c('.desconto span:last-child').innerHTML = `R$: ${desconto.toFixed(2)}`;
           c('.total span:last-child').innerHTML = `R$: ${total.toFixed(2)}`;
+          c('.cart--finalizar').addEventListener('click', () => {
+               c('aside').classList.remove('show');  
+               c('aside').style.left = '100vw';
+               clear();
+          });
      }
      else {
           c('aside').classList.remove('show');  
