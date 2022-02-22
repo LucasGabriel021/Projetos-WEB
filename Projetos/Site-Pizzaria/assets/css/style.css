@@ -1,18 +1,26 @@
+/*RESET DO CSS*/
 * {
     box-sizing: border-box;
 }
+
+/*CONFIG GLOBAL*/
 body {
     background-color:#EEE;
-    font-family:'Lato',Helvetica,Arial;
-    font-size:15px;
+    font: 15px 'Lato',Helvetica,Arial;
     display:flex;
     margin:0;
     min-height:100vh;
 }
+
 .models {
     display:none;
 }
 
+h1 {
+    font-family:'Hepta Slab', Helvetica, Arial;
+}
+
+/*CONFIG HEADER*/
 header {
     position: fixed;
     left:0;
@@ -24,6 +32,7 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
+
 .menu-openner {
     margin-right: 15px;
     font-size: 26px;
@@ -31,9 +40,11 @@ header {
     padding: 5px 20px;
     border-radius: 5px;
 }
+    
     .menu-openner span {
         margin-right:10px;
     }
+
 .menu-closer {
     width:32px;
     height:32px;
@@ -48,35 +59,39 @@ aside {
     transition:all ease .2s;
     overflow-x:hidden;
 }
+    
     aside.show {
         width:30vw;
     }
+
 .cart--area {
     padding:20px;
 }
+
 main {
     flex:1;
     padding:20px;
 }
-h1 {
-    font-family:'Hepta Slab', Helvetica, Arial;
-}
+
 .pizza-area {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
 .pizza-item {
     text-align: center;
     max-width:250px;
     font-family:'Hepta Slab', Helvetica, Arial;
     margin:0 auto 50px auto;
 }
+    
     .pizza-item a {
         display:flex;
         flex-direction: column;
         align-items:center;
         text-decoration: none;
     }
+
 .pizza-item--img {
     width:200px;
     height:200px;
@@ -84,10 +99,12 @@ h1 {
     border-radius:100px;
     box-shadow:0px 10px 50px rgba(0, 0, 0, 0.2);
 }
+   
     .pizza-item--img img {
         width:100%;
         height:auto;
-    }   
+    }
+       
 .pizza-item--add {
     width:50px;
     height:50px;
@@ -101,20 +118,23 @@ h1 {
     margin-top:-25px;
     transition:all ease .2s;
 }
+    
     .pizza-item a:hover .pizza-item--add {
         background-color:#244c88;
     }
+
 .pizza-item--price {
     font-size:15px;
     color:#333;
     margin-top:5px;
 }
+
 .pizza-item--name {
-    font-size:20px;
-    font-weight: bold;
+    font:bold 20px;
     color:#000;
     margin-top:5px;
 }
+
 .pizza-item--desc {
     font-size:13px;
     color:#555;
@@ -134,6 +154,7 @@ h1 {
     align-items: center;
     overflow-y:auto;
 }
+
 .pizzaWindowBody {
     width:900px;
     background-color:#FFF;
@@ -142,36 +163,42 @@ h1 {
     display:flex;
     margin:20px 0px;
 }
+
 .pizzaBig {
     flex:1;
     display:flex;
     justify-content: center;
     align-items: center;
 }
+
 .pizzaBig--back {
     position:absolute;
     width:30px;
     height:30px;
     background-color:#000;
 }
+
 .pizzaBig img {
     height:400px;
     width:auto;
 }
+
 .pizzaInfo {
     flex:1;
     font-family:'Hepta Slab', Helvetica, Arial;
     padding-bottom:50px;
 }
+    
     .pizzaInfo h1 {
         margin-top:50px;
     }
+
 .pizzaInfo .pizzaInfo--desc {
-    font-size:15px;
     color:#999;
     margin-top:10px;
-    font-family:'Lato',Helvetica,Arial;
+    font:15px 'Lato',Helvetica,Arial;
 }
+
 .pizzaInfo--sector {
     color:#CCC;
     text-transform: uppercase;
@@ -179,6 +206,7 @@ h1 {
     margin-top:30px;
     margin-bottom:10px;
 }
+
 .pizzaInfo--sizes {
     display:inline-flex;
     border-radius:10px;
@@ -188,39 +216,45 @@ h1 {
     padding:10px 15px;
     color:#000;
     background-color:#EEE;
-    font-size:13px;
-    font-weight: bold;
+    font:bold 13px;
     cursor:pointer;
 }
+    
     .pizzaInfo--size:hover {
         background-color:#CCC;
     }
+
 .pizzaInfo--size.selected {
     background-color:#399ade;
     color:#FFF;
 }
+    
     .pizzaInfo--size.selected span {
         color:#D6D6D6;
     }
+    
     .pizzaInfo--size span {
-        font-size:12px;
+        font:normal 12px;
         color:#999;
-        font-weight: normal;
     }
+
 .pizzaInfo--price {
     display:flex;
     align-items:center;
 }
+
 .pizzaInfo--actualPrice {
     font-size:28px;
     margin-right:30px;
 }
+
 .pizzaInfo--qtarea {
     display:inline-flex;
     background-color:#EEE;
     border-radius:10px;
     height:30px;
 }
+    
     .pizzaInfo--qtarea button {
         border:0;
         background-color:transparent;
@@ -230,13 +264,13 @@ h1 {
         padding:0px 10px;
         color:#333;
     }
+
 .pizzaInfo--qt {
-    line-height: 30px;
-    font-size: 12px;
-    font-weight: bold;
+    font: bold 12px/30px;
     padding: 0px 5px;
     color:#000;
 }
+
 .pizzaInfo--addButton {
     margin-top:30px;
     padding:20px 30px;
@@ -247,13 +281,16 @@ h1 {
     cursor:pointer;
     margin-right:30px;
 }
+    
     .pizzaInfo--addButton:hover {
         background-color:#32a345;
     }
+
 .pizzaInfo--cancelButton {
     display:inline-block;
     cursor:pointer;
 }
+
 .pizzaInfo--cancelMobileButton {
     display:none;
     height:40px;
@@ -261,28 +298,34 @@ h1 {
     line-height: 40px;
     margin-bottom:30px;
 }
+
 .cart {
     margin-bottom:20px;
 }
+
 .cart--item {
     display:flex;
     align-items:center;
     margin:10px 0;
 }
-.cart--item img {
-    width:40px;
-    height:40px;
-    margin-right:20px;
-}
+
+    .cart--item img {
+        width:40px;
+        height:40px;
+        margin-right:20px;
+    }
+
 .cart--item-nome {
     flex:1;
 }
+
 .cart--item--qtarea {
     display:inline-flex;
     background-color:#EEE;
     border-radius:10px;
     height:30px;
 }
+    
     .cart--item--qtarea button {
         border:0;
         background-color:transparent;
@@ -292,13 +335,13 @@ h1 {
         padding:0px 10px;
         color:#333;
     }
+
 .cart--item--qt {
-    line-height: 30px;
-    font-size: 12px;
-    font-weight: bold;
+    font: bold 12px/30px;
     padding: 0px 5px;
     color:#000;
 }
+
 .cart--totalitem {
     padding:15px 0;
     border-top:1px solid #79b9dd;
@@ -307,14 +350,16 @@ h1 {
     justify-content: space-between;
     font-size:15px;
 }
+
     .cart--totalitem span:first-child {
         font-weight: bold;
     }
+
 .cart--totalitem.big {
-    font-size:20px;
+    font:bold 20px;
     color:#000;
-    font-weight: bold;
 }
+
 .cart--finalizar {
     padding:20px 30px;
     border-radius:20px;
@@ -326,9 +371,11 @@ h1 {
     border:2px solid #63f77c;
     transition: all ease .2s;
 }
+
 .cart--finalizar:hover {
     background-color:#35af4a;
 }
+
 
 @media (max-width:1000px) {
     .pizza-area {
