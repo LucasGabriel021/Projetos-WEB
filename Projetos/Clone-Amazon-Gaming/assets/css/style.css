@@ -1,0 +1,180 @@
+/*VARIÁVEIS DE CORES*/
+:root {
+     --roxo: #392e5c;
+     --roxo-dark: #201c2b;
+     --azul: #00a8e0;
+}
+
+/*CONFIG GLOBAL*/
+.container {
+     width: 1359px;
+     height: 100%;
+}
+
+/*CONFIG HEADER*/
+#header {
+     height: 56px;
+     width: 100%;
+     background-color: green;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.menu {
+     height: 100%;
+     width: 100%;
+}
+
+#nav {
+     height: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.logomarca span{
+     font: 700 22px 'Roboto', sans-serif;
+     color: #fff;
+}
+
+.logomarca {
+     font: normal 22px 'Roboto', sans-serif;
+     color: #fff;
+}
+
+#ul-pcl {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 15px;
+}
+
+#ul-pcl > li > a{
+     text-decoration: none;
+     font: 700 14px 'Roboto', sans-serif;
+     color: #fff;
+     border: 1px solid #fff;
+     border-radius: 5px;
+     background-color: transparent;
+     padding: 5px;
+     cursor: pointer;
+}
+
+#ul-pcl > li > a:hover {
+     background-color: rgba(255, 255, 255, 0.5);
+}
+
+#ul-pcl li {
+     font: 700 14px 'Roboto', sans-serif;
+     color: #fff;
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+     gap: 5px;
+}
+
+
+/*CONFIG BOTÃO IDIOMA*/
+.btn-idioma {
+     display: flex;
+     align-items: center;
+     padding: 10px;
+}
+
+     .btn-idioma:hover {
+          background-color: var(--roxo);
+     }    
+
+     .btn-idioma img {
+          width: 14px;
+     }
+
+.btn-idioma .btn-idioma--seta {
+     transform: rotateZ(180deg);
+     transition: all .5s;
+}
+
+.btn-idioma--menu {
+     position: relative;
+}
+
+     .btn-idioma--menu > ul {
+          position: absolute;
+          display: none;
+          flex-direction: column;
+          top: 0;
+          right: 0;
+          margin-top: 15px;
+          width: 150px;
+          height: 580px;
+          background-color: var(--roxo-dark);
+          border-radius: 5px;
+          padding: 10px;
+     }
+
+     .btn-idioma--menu li a{
+          text-decoration: none;
+          font: bold 14px 'Roboto', sans-serif;
+          color: #fff;
+          background-color: transparent;
+          padding: 15px 5px;
+          cursor: pointer;
+     }
+
+     .btn-idioma--menu li:hover {
+          background-color: var(--roxo);
+     }
+
+
+/*CONFIG BOTÃO USUARIO*/
+.btn-login {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 5px;
+}
+
+.btn-login:hover {
+     background-color: var(--roxo);
+}
+
+.btn-login--imgs img{
+     width: 14px;
+}
+
+.btn-login--seta {
+     transform: rotateZ(180deg);
+     transition: all .5s;
+}
+
+.btn-login--menu {
+     position: relative;
+}
+
+.btn-login--menu > ul {
+     position: absolute;
+     top: 0;
+     right: 0;
+     margin-top: 15px;
+     display: none;
+     flex-direction: column;
+     background-color: var(--roxo-dark);
+     border-radius: 5px;
+     width: 250px;
+     height: 210px;
+     padding: 10px;
+}
+
+.btn-login--menu li a {
+     text-decoration: none;
+     font: bold 14px 'Roboto', sans-serif;
+     color: #fff;
+     background-color: transparent;
+     padding: 15px 5px;
+     cursor: pointer;
+}  
+
+.btn-login--menu li:hover {
+     background-color: var(--roxo);
+}
