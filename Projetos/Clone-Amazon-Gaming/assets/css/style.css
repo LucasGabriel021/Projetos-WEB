@@ -67,133 +67,68 @@ h1 {
      justify-content: center;
      align-items: center;
      gap: 15px;
+     list-style: none;
 }
 
-#ul-pcl > li > a{
-     text-decoration: none;
-     font: 700 14px 'Roboto', sans-serif;
-     color: #fff;
-     border: 1px solid #fff;
-     border-radius: 5px;
-     background-color: transparent;
-     padding: 5px;
-     cursor: pointer;
-}
-
-#ul-pcl > li > a:hover {
-     background-color: rgba(255, 255, 255, 0.1);
-}
-
-#ul-pcl li {
-     font: 700 14px 'Roboto', sans-serif;
-     color: #fff;
-     display: flex;
-     align-items: center;
-     cursor: pointer;
-     gap: 5px;
-}
-
-.btn-idioma {
-     display: flex;
-     align-items: center;
-     padding: 10px;
-}
-
-.btn-idioma:hover {
-     background-color: var(--roxo);
-}    
-
-.btn-idioma--imgs img {
-     width: 14px;
-}
-
-.btn-idioma--imgs .btn-idioma--seta {
-     transform: rotateZ(180deg);
-     transition: all .5s;
-}
-
-.btn-idioma--menu {
-     position: relative;
-}
-
-     .btn-idioma--menu > ul {
-          position: absolute;
-          z-index: 99;
-          display: none;
-          flex-direction: column;
-          top: 0;
-          right: 0;
-          margin-top: 20px;
-          width: 150px;
-          height: 580px;
-          background-color: var(--roxo-dark);
-          border-radius: 5px;
-          padding: 10px;
-     }
-
-     .btn-idioma--menu li a{
-          text-decoration: none;
-          font: bold 14px 'Roboto', sans-serif;
-          color: #fff;
-          background-color: transparent;
-          padding: 15px 5px;
+     #ul-pcl > li {
+          position: relative;
           cursor: pointer;
-     }
+          gap: 5px;
+          font: 700 14px 'Roboto', sans-serif;
+          color: #fff;
+     }    
 
-     .btn-idioma--menu li:hover, .btn-idioma--menu li:nth-child(10){
-          background-color: var(--roxo);
-     }
+          #ul-pcl > .btn-login > a{
+               text-decoration: none;
+               font: 700 14px 'Roboto', sans-serif;
+               color: #fff;
+               border: 1px solid #fff;
+               border-radius: 5px;
+               background-color: transparent;
+               padding: 5px;
+               cursor: pointer;
+          }
 
-.btn-login {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     padding: 5px;
-}
+          #ul-pcl > li > a{
+               text-decoration: none;
+               font: 700 14px 'Roboto', sans-serif;
+               color: #fff;
+               border-radius: 5px;
+               background-color: transparent;
+               padding: 5px;
+               cursor: pointer;
+               display: flex;
+               gap: 5px;
+               align-items: center;
+          }
 
-.btn-login:hover {
-     background-color: var(--roxo);
-}
+          #ul-pcl > li > a:hover {
+               background-color: rgba(255, 255, 255, 0.1);
+          }
 
-.btn-login--imgs img{
-     width: 14px;
-}
 
-.btn-login--seta {
-     transform: rotateZ(180deg);
-     transition: all .5s;
-}
-
-.btn-login--menu {
-     position: relative;
-}
-
-.btn-login--menu > ul {
+#ul-pcl li > ul {
      position: absolute;
-     z-index: 99;
-     top: 0;
+     top: 35px;
      right: 0;
-     margin-top: 20px;
-     display: none;
-     flex-direction: column;
+     width: 160px;
      background-color: var(--roxo-dark);
-     border-radius: 5px;
-     width: 250px;
-     height: 210px;
-     padding: 10px;
+     display: none;
 }
 
-.btn-login--menu li a {
-     text-decoration: none;
-     font: bold 14px 'Roboto', sans-serif;
-     color: #fff;
-     background-color: transparent;
-     padding: 15px 5px;
-     cursor: pointer;
-}  
+#ul-pcl li > ul > li{
+     padding: 13px 10px;
+}
 
-.btn-login--menu li:hover {
-     background-color: var(--roxo);
+#ul-pcl li > ul > li > a{
+     padding: 10px 15px;
+     text-decoration: none;
+     font: normal 12px 'Roboto', sans-serif;
+     color: #fff;
+}
+
+#ul-pcl li:hover ul {
+     display: block;
 }
 
 /*CONFIG BANNER PRINCIPAL*/
