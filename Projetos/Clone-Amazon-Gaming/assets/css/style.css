@@ -102,22 +102,29 @@ h1 {
                align-items: center;
           }
 
-          #ul-pcl > li > a:hover {
+          #ul-pcl > .btn-login > a:hover {
                background-color: rgba(255, 255, 255, 0.1);
+          }
+
+          #ul-pcl > li > a:hover {
+               background-color: var(--roxo);
           }
 
 
 #ul-pcl li > ul {
      position: absolute;
-     top: 35px;
+     z-index: 99;
+     top: 30px;
      right: 0;
      width: 160px;
      background-color: var(--roxo-dark);
      display: none;
+     padding: 10px;
 }
 
 #ul-pcl li > ul > li{
-     padding: 13px 10px;
+     padding: 13px 5px;
+     border-radius: 5px;
 }
 
 #ul-pcl li > ul > li > a{
@@ -125,6 +132,10 @@ h1 {
      text-decoration: none;
      font: normal 12px 'Roboto', sans-serif;
      color: #fff;
+}
+
+#ul-pcl li > ul > li:hover, .selected {
+     background-color: var(--roxo);
 }
 
 #ul-pcl li:hover ul {
