@@ -24,4 +24,5 @@ butaoLogin.addEventListener('click', () => {
           menuLogin.style.display = 'none'; 
           imgIcone.style.transform = 'rotateZ(180deg)';
      }
+     
 });
