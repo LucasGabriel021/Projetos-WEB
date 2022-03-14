@@ -328,3 +328,34 @@ h1 {
      .menu-pcl-a-3 button:hover {
           background-color: var(--azul-white);
      }
+
+/*SECTION SLIDE 1*/
+#slide-1 {
+     margin-top: 510px;
+     width: 100%;
+     height: 387px;
+     background-color: var(--roxo-dark);
+     display: flex;
+     justify-content: center;
+     padding: 40px 0px;
+}
+
+.slide-area {
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+}
+
+.slide-area--left {
+     padding: 16px 0px;
+}
+
+     .slide-area--left h3{
+          font: normal 28px 'Roboto', sans-serif;
+          color: #fff;
+     }
+
+     .slide-area--left p {
+          margin-top: 16px;
+          font: normal 16px/24px 'Roboto', sans-serif;
+          color: #fff;
+     }
