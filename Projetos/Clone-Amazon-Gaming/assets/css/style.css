@@ -302,7 +302,8 @@ h1 {
      }
 
      .menu-pcl-a-2 p::before {
-          content: '>>';
+          content: '✓  ';
+          margin-right: 10px;
      }
 
 .menu-pcl-a-3 {
