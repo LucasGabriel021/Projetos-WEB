@@ -1,6 +1,7 @@
 /*VARIÁVEIS DE CORES*/
 :root {
      --roxo: #392e5c;
+     --roxo-hover: #5A458A;
      --roxo-dark: #201c2b;
      --roxo-white: #b19dd8;
      --azul: #00a8e0;
@@ -333,7 +334,6 @@ h1 {
 #slide-1 {
      margin-top: 510px;
      width: 100%;
-     height: 387px;
      background-color: var(--roxo-dark);
      display: flex;
      justify-content: center;
@@ -342,7 +342,8 @@ h1 {
 
 .slide-area {
      display: grid;
-     grid-template-columns: 1fr 2fr;
+     grid-template-columns: 450px 1fr;
+     gap: 35px;
 }
 
 .slide-area--left {
@@ -359,3 +360,69 @@ h1 {
           font: normal 16px/24px 'Roboto', sans-serif;
           color: #fff;
      }
+
+.slide-area--right {
+     overflow: hidden;
+     width: 100%;
+     height: 100%;
+}
+
+.slider-controls {
+     position: absolute;
+     z-index: 99;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.slider-control {
+     width: 50px;
+     height: 50px;
+     cursor: pointer;
+}
+
+     .slider-control img {
+          width: 30px;
+          height: 30px;
+     }
+
+.slider--width {
+     height: 100%;
+     display: flex;
+     gap: 16px;
+     transition: all ease .3s;
+}
+
+.box-slider {
+     width: 224px;
+     height: 222px;
+     display: grid;
+     grid-template-columns: 1fr;
+     overflow: hidden;
+}
+
+.box-slider--top {
+     grid-row: 1 / 2;
+     background-color: transparent;
+     height: 126px;
+     background-size: cover;
+     background-position: center;
+     border-radius: 5px;
+}
+
+.box-slider--bottom {
+     grid-row: 2 / 3;
+     height: 96px;
+     padding: 16px;
+     background-color: var(--roxo);
+}
+
+.box-slider--bottom h4 {
+     font: 700 14px 'Roboto', sans-serif;
+     color: #fff;
+}
+
+.box-slider--bottom p {
+     font: 700 12px 'Roboto', sans-serif;
+     color: var(--roxo-white);
+}
