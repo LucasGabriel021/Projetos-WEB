@@ -69,20 +69,3 @@ function clear() {
      button3.classList.remove('btn-selected');
      button4.classList.remove('btn-selected');
 }
-
-/*
-let btn_hover = document.querySelector('.box-slider');
-let img_hover = document.querySelector('.box-slider--top');
-let box_hover = document.querySelector('.box-slider--bottom');
-btn_hover.addEventListener('mouseover', () => {
-     box_hover.style.background = '#5A458A';
-     img_hover.style.transform = 'scale(1.3)';
-     
-});
-
-btn_hover.addEventListener('mouseout', () => {
-     box_hover.style.background = '#392e5c';  
-     img_hover.style.transform = 'scale(1.1)';
-});
-*/
-

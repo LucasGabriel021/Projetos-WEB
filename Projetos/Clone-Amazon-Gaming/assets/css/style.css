@@ -368,11 +368,11 @@ h1 {
      position: relative;
 }
 
-.slider--width {
-     height: 100%;
+.slider--carousel {
      display: flex;
      gap: 16px;
      transition: all ease .3s;
+     transform: translateX(0);
 }
 
 .box-slider {
