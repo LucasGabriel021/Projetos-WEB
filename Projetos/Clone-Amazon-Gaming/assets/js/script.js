@@ -86,30 +86,3 @@ btn_hover.addEventListener('mouseout', () => {
 });
 */
 
-let totalSliders = document.querySelectorAll('.box-slider').length;
-let slideAtual = 0;
-let sliderWidth = document.querySelector('.slide-area--right').clientWidth;
-document.querySelector('.slider--width').style.width = `${sliderWidth} * ${totalSliders}px`;
-document.querySelector('.slider-controls').style.width = `${sliderWidth}px`;
-document.querySelector('.slider-controls').style.width = `${document.querySelector('.slide-area--right').clientHeight}px`;
-
-function goPrev() {
-     slideAtual--;
-     if(slideAtual < 0) {
-          slideAtual = slideAtual - 1;
-     }
-     updateMargin();
-}
-
-function goNext() {
-     slideAtual++;
-     if(slideAtual > (totalSlide - 1)) {
-          slideAtual = 0;
-     }
-     updateMargin();
-}
-
-function updateMargin() {
-     let newMargin = (slideAtual * document.body.clientWidth);
-     document.querySelector('.slider--width').style.marginLeft = `-${newMargin}px`;
-}
