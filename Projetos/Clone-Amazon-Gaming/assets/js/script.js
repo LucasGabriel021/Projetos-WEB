@@ -69,3 +69,11 @@ function clear() {
      button3.classList.remove('btn-selected');
      button4.classList.remove('btn-selected');
 }
+
+const qtBox = document.querySelectorALL('.slides .box-slider');
+let etapa = 0;
+let slideAtual = document.getElementById('slide-atual');
+
+function slide() {
+     
+}

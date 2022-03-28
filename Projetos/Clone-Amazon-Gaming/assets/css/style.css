@@ -368,11 +368,34 @@ h1 {
      position: relative;
 }
 
-.slider--carousel {
+.btn {
+     position: absolute;
+     color: var(--roxo-hover);
+     padding: 10px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     font-size: 20px;
+}
+
+#voltar {
+     top: 50%;
+     left: 10%;
+}
+
+#ir {
+     top: 50%;
+     right: 10%;
+}
+
+.slides {
      display: flex;
      gap: 16px;
      transition: all ease .3s;
      transform: translateX(0);
+     width: calc(7 * 232px);
 }
 
 .box-slider {
