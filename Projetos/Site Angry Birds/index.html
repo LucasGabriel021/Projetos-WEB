@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Lucas Gabriel G. Oliveira" />
+     <meta name="keywords" content="Jogo, Passaro, Angry Birds" />
+     <meta name="description" content="Jogo de Passaro" />
+     <link rel="stylesheet" href="assets/css/normalize.css" />
+     <link rel="stylesheet" href="assets/css/style.css" />
+     <link rel="shortcut icon" href="assets/img/icone-favicon.ico" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https: //fonts.googleapis.com/css2? family= Noto+Sans:wght@400;700 & display=swap" rel="stylesheet">
+     <title>Angry Birds</title>
+</head>
+
+<body>
+     <header id="header">
+          <div class="container header-organization">
+               <div class="logo">
+                    <div class="logo-area">
+                         <img src="assets/img/logo-angry-birds.png" alt="Angry Birds" class="img-no-ativo" />
+                         <img src="assets/img/logo-angry-birds-ativo.png" alt="Angry Birds" class="img-ativo" />
+                    </div>
+               </div>
+               <div id="menu">
+                    <nav>
+                         <ul>
+                              <li><a href="#">GAMES</a></li>
+                              <li><a href="#">MOVIE</a></li>
+                              <li><a href="#">TOONS</a></li>
+                         </ul>
+                    </nav>
+               </div>
+               <div id="menu-toggle">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+               </div>
+          </div>
+     </header>
+     <main id="main">
+          <section id="sliders">
+               <div class="slider-area">
+                    <div class="slider-item" style="background-image: url(/assets/img/banner-principal.png);"></div>
+                    <div class="slider-item" style="background-image: url(/assets/img/banner-principal-1.jpg);"></div>
+                    <div class="slider-item" style="background-image: url(/assets/img/banner-principal-2.png);"></div>
+               </div>
+          </section>
+          <div class="blue-leaves blue-leaves-1"></div>
+          <section id="ab-play-store">
+               <div class="filter-img">
+                    <div class="container">
+                         <div class="ab-play-store-area">
+                              <div class="birds-ps">
+                                   <img src="assets/img/birds-red-pink.png" alt="Birds" />
+                              </div>
+                              <div class="box-msg">
+                                   DOWNLOAD IT <br> RIGHT NOW!!!
+                              </div>
+                              <div class="box-ps">
+                                   <img src="assets/img/play-store.jpg" alt="Play Store" />
+                              </div>
+                              <div class="box-msg">
+                                   FOR FREE
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <div class="dark-leaves dark-leaves-1"></div>
+          <section id="ab-games">
+               <div class="container">
+                    <div class="title-ab-games">
+                         <h2>GAMES</h2>
+                    </div>
+               </div>
+          </section>
+          <div class="dark-leaves dark-leaves-2"></div>
+          <section id="games-ab">
+               <div class="container area-games-ab">
+                    <div class="box-img-games">
+                         <img src="assets/img/min-img-1.jpg" alt="Imagem Angry Birds" />
+                    </div>
+                    <div class="box-img-games">
+                         <img src="assets/img/min-img-2.jpg" alt="Imagem Angry Birds" />
+                    </div>
+                    <div class="box-img-games">
+                         <img src="assets/img/min-img-3.jpg" alt="Imagem Angry Birds" />
+                    </div>
+               </div>
+          </section>
+          <div class="division"></div>
+          <section id="pig"></section>
+          <div class="blue-leaves blue-leaves-2"></div>
+          <section id="img-movie-ab">
+               <div class="container">
+                    <div class="box-img-movie">
+                         <img src="assets/img/angry-birds-logomarca.png" alt="Logo">
+                    </div>
+               </div>
+          </section>
+          <div class="blue-leaves blue-leaves-3"></div>
+          <section id="galeria-slider">
+               <div class="galeria-slider-filtro">
+                    <div class="container">
+                         <div class="galeria-slider-area">
+                              <div class="galeria-slider-left">
+                                   <div class="galeria-slider-left-box" onclick="alterarImg('1')">
+                                        <img src="assets/img/galeria-1.jpg" alt="">
+                                   </div>
+                                   <div class="galeria-slider-left-box" onclick="alterarImg('2')">
+                                        <img src="assets/img/galeria-2.jpg" alt="">
+                                   </div>
+                                   <div class="galeria-slider-left-box" onclick="alterarImg('3')">
+                                        <img src="assets/img/galeria-3.jpg" alt="">
+                                   </div>
+                                   <div class="galeria-slider-left-box" onclick="alterarImg('4')">
+                                        <img src="assets/img/galeria-4.jpg" alt="">
+                                   </div>
+                                   <div class="galeria-slider-left-box" onclick="alterarImg('5')">
+                                        <img src="assets/img/galeria-5.jpg" alt="">
+                                   </div>
+                                   <div class="galeria-slider-left-box" onclick="alterarImg('6')">
+                                        <img src="assets/img/galeria-6.jpg" alt="">
+                                   </div>
+                                   <div class="galeria-slider-left-box" onclick="alterarImg('7')">
+                                        <img src="assets/img/galeria-7.jpg" alt="">
+                                   </div>
+                                   <div class="galeria-slider-left-box" onclick="alterarImg('8')">
+                                        <img src="assets/img/galeria-8.jpg" alt="">
+                                   </div>
+                              </div>
+                              <div class="galeria-slider-right">
+                                   <div class="galeria-slider-controls">
+                                        <div class="slider-control" onclick="goPrev()">
+                                             < 
+                                        </div>
+                                        <div class="slider-control" onclick="goNext()">
+                                             >
+                                        </div>
+                                        </div>
+                                        <div class="galeria-slider-width">
+                                             <div class="galeria-slider-item"
+                                                  style="background-image: url(./assets/img/img-1.jpg);"></div>
+                                             <div class="galeria-slider-item"
+                                                  style="background-image: url(./assets/img/img-2.jpg);"></div>
+                                             <div class="galeria-slider-item"
+                                                  style="background-image: url(./assets/img/img-3.jpg);"></div>
+                                             <div class="galeria-slider-item"
+                                                  style="background-image: url(./assets/img/img-4.jpg);"></div>
+                                             <div class="galeria-slider-item"
+                                                  style="background-image: url(./assets/img/img-5.jpg);"></div>
+                                             <div class="galeria-slider-item"
+                                                  style="background-image: url(./assets/img/img-6.jpg);"></div>
+                                             <div class="galeria-slider-item"
+                                                  style="background-image: url(./assets/img/img-7.jpg);"></div>
+                                             <div class="galeria-slider-item"
+                                                  style="background-image: url(./assets/img/img-8.jpg);"></div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="galeria-slider-etiqueta">
+                                   <img src="assets/img/selo-angry-birds.jpg" alt="" />
+                              </div>
+                         </div>
+                    </div>
+          </section>
+          <div class="blue-leaves blue-leaves-4"></div>
+          <section id="banner-red"></section>
+          <div class="dark-leaves dark-leaves-3"></div>
+          <section id="banner-friends">
+               <img src="assets/img/angry-birds-logomarca-2.png" alt="">
+          </section>
+          <div class="blue-leaves blue-leaves-5"></div>
+          <section id="banner-video">
+               <div class="banner-video-filtro">
+                    <div class="banner-video-area">
+                         <iframe width="560" height="315" src="https://www.youtube.com/embed/lwF9r9jupz0" title="YouTube video player"
+                         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowfullscreen></iframe>
+                    </div>
+               </div>
+          </section>
+     </main>
+     <footer>
+          <h2>Site desenvolvido por Lucas Gabriel com HTML, CSS e JS puro, sendo que sua versão primária foi feita no muse!</h2>
+     </footer>
+     <script src="assets/js/script.js"></script>
+</body>
+
+</html>

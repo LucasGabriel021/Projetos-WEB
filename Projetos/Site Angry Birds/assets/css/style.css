@@ -1,0 +1,570 @@
+/*VARIÁVEIS*/
+:root {
+     --blue: #0062ec;
+     --orange: #ff5f04;
+     --green: #66af15;
+     --black: #1b1c20;
+     --red: #d5002c;
+}
+
+/*CONFIGS GLOBAL*/
+.container {
+     width: 1000px;
+}
+
+.blue-leaves {
+     background: url(/assets/img/folhas.png) repeat-x center;
+     background-size: cover;
+     height: 369px;
+     width: 100%;
+}
+
+.dark-leaves {
+     background: url(/assets/img/folhas-2.png) repeat-x center;
+     background-size: cover;
+     height: 249px;
+     width: 100%;
+}
+
+body {
+     background-color: var(--blue);
+}
+
+/*CONFIG HEADER*/
+#header {
+     width: 100%;
+     height: 66px;
+     background-color: #fff;
+     box-shadow: 0px 2px 8px #000;
+     margin-bottom: 20px;
+     display: flex;
+     justify-content: center;
+}
+
+.header-organization {
+     display: flex;
+     justify-content: space-between;
+     align-items: center
+}
+
+.logo-area {
+     width: 150px;
+     height: auto;
+     position: relative;
+}
+
+.img-ativo {
+     position: absolute;
+     opacity: 0;
+     top: 0;
+     left: 0;
+}
+
+     .img-ativo:hover {
+          opacity: 1;
+     }    
+
+#menu nav > ul {
+     display: flex;
+     gap: 10px;
+}
+
+     #menu ul > li {
+          list-style: none;
+          
+     }
+
+          #menu ul > li > a {
+               text-decoration: none;
+               color: #000;
+               font: 700 18px 'Noto Sans', sans-serif;
+               padding: 10px 20px;
+          }
+
+               #menu li > a:hover {
+                    color: #fff;
+                    background-color: #000;
+               }
+
+#menu-toggle {
+     width: 39px;
+     height: 39px;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 5px;
+     display: none;
+}
+
+.line1, .line2, .line3 {
+     background-color: #000;
+     width: 30px;
+     height: 2px;
+     transition: all .4s;
+     position: relative;
+}
+
+/*CONFIG SECTIONS SLIDERS*/
+#sliders {
+     height: 325px;
+     background-color: var(--orange);
+     overflow: hidden;
+}
+
+.slider-area {
+     height: 100%;
+     display: flex;
+     transition: all .4s linear;
+}
+
+.slider-item {
+     width: 100vw;
+     height: inherit;
+     background: no-repeat center;
+     background-size: contain;
+}
+
+/*CONGIG FOLHAS DE SEPARAÇÃO*/
+.blue-leaves-1 {
+     position: absolute;
+     z-index: 99;
+     top: 0;
+     left: 0;
+     margin-top: 240px;
+}
+
+/*CONFIG SECTION AB PLAY STORE*/
+#ab-play-store {
+     background: url(/assets/img/banner-1.jpg) no-repeat center 0;
+     background-size: cover;
+     height: 600px;
+     width: 100%;
+     position: relative;
+}
+
+.filter-img {
+     width: inherit;
+     height: inherit;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-color: rgba(30, 127, 251, 0.8);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.ab-play-store-area {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 60px;
+     position: relative;
+}
+
+     .ab-play-store-area > .birds-ps{
+          position: absolute;
+          margin-bottom: 220px;
+          margin-left: 230px;
+     }
+
+          .ab-play-store-area > .birds-ps > img {
+               width: 157px;
+               height: 160px;
+          }
+
+     .ab-play-store-area > .box-ps img{
+          border: 6px solid #fff;
+          border-radius: 50%;
+          width: 220px;
+          height: 170px;
+     }
+
+     .ab-play-store-area > .box-msg {
+          color: #fff;
+          font: 700 30px 'Noto Sans', sans-serif;
+     }
+
+/*CONGIG FOLHAS DE SEPARAÇÃO*/
+.dark-leaves-1 {
+     position: absolute;
+     z-index: 99;
+     left: 0;
+     margin-top: -135px;
+}
+
+/*CONFIG SECTION AB GAMES*/
+#ab-games {
+     background: url(/assets/img/banner-2.jpg) no-repeat center;
+     background-size: cover;
+     height: 260px;
+     display: flex;
+     justify-content: center;
+}
+
+.title-ab-games {
+     height: 260px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+}
+
+     .title-ab-games > h2 {
+          font: 400 70px 'Noto Sans';
+     } 
+
+/*CONGIG FOLHAS DE SEPARAÇÃO*/
+.dark-leaves-2 {
+     position: absolute;
+     z-index: 99;
+     left: 0;
+     margin-top: -120px;
+}
+
+/*CONGIG SECTION AB GAMES*/
+#games-ab {
+     height: 270px;
+     width: 100%;
+     background-color: var(--black);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.area-games-ab {
+     height: 160px;
+     max-width: 1000px;
+     display: flex;
+}
+
+.box-img-games{
+     flex: 1;
+}
+
+     .box-img-games > img {
+          width: 100%;
+          height: 100%;
+          opacity: 60%;
+     }
+
+          .box-img-games > img:hover {
+               opacity: 100%;
+          }
+
+/*CLASSE DIVISÃO*/
+.division {
+     background: var(--green) url(/assets/img/separador.png) no-repeat;
+     height: 24px;
+}
+
+/*SECTION PIG*/
+#pig {
+     background: var(--green) url(/assets/img/banner-3.jpg) no-repeat center;
+     background-size: contain;
+     height: 235px;
+}
+
+/*CONFIG FOLHAS DE SEPARAÇÃO BLUES-LEAVES-2*/
+.blue-leaves-2 {
+     position: absolute;
+     z-index: 99;
+     left: 0;
+     margin-top: -170px;
+}
+
+/*SECTION IMG-MOVIE-AB*/
+#img-movie-ab {
+     background: url(../img/banner-4.jpg) no-repeat center;
+     background-size: cover;
+     height: 260px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.box-img-movie {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+}
+
+/*CONFIG FOLHAS DE SEPARAÇÃO BLUES-LEAVES-3*/
+.blue-leaves-3 {
+     position: absolute;
+     z-index: 99;
+     left: 0;
+     margin-top: -175px;
+}
+
+/*SECTION GALERIA-SLIDER*/
+#galeria-slider {
+     background: url(../img/banner-5.jpg) no-repeat center;
+     background-size: cover;
+     width: 100%;
+     height: 650px;
+}
+
+.galeria-slider-filtro {
+     width: 100%;
+     height: 650px;
+     background-color: rgba(30, 127, 251, 0.6);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.galeria-slider-area {
+     width: 85%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+}
+
+.galeria-slider-left {
+     width: 140px;
+     height: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+}
+
+.galeria-slider-left-box {
+     flex: 1;
+     cursor: pointer;
+}
+
+.galeria-slider-left-box img{
+     height: 100%;
+}
+
+.galeria-slider-right {
+     flex: 1;
+     overflow: hidden;
+}
+
+.galeria-slider-controls {
+     position: absolute;
+     z-index: 99;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.slider-control {
+     height: 40px;
+     width: 55px;
+     color: #Fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #000;
+     border: 3px solid #fff;
+     cursor: pointer;
+}
+
+.galeria-slider-width {
+     height: 100%;
+     display: flex;
+     transition: all .4s linear;
+}
+
+.galeria-slider-item {
+     width: 100%;
+     height: inherit;
+     background: no-repeat center;
+     background-size: cover;
+}
+
+.galeria-slider-etiqueta {
+     position: absolute;
+     z-index: 999;
+}
+
+     .galeria-slider-etiqueta img {
+          width: 340px;
+          height: 182px;
+          border: 5px solid #000;
+          border-radius: 20px;
+          margin-left: 70px;
+          margin-top: -30px;
+     }
+
+/*CONFIG FOLHAS DE SEPARAÇÃO BLUES-LEAVES-4*/
+.blue-leaves-4 {
+     position: absolute;
+     z-index: 99;
+     left: 0;
+     margin-top: -175px;
+}
+
+/*SECTION BANNER-RED*/
+#banner-red {
+     height: 225px;
+     width: 100%;
+     background: url(../img/banner-6.jpg) no-repeat center;
+     background-color: var(--red);
+}
+
+/*CONFIG FOLHAS DE SEPARAÇÃO DARK-LEAVES-3*/
+.dark-leaves-3 {
+     position: absolute;
+     z-index: 99;
+     left: 0;
+     margin-top: -120px;
+}
+
+/*SECTION BANNER-RED*/
+#banner-friends {
+     height: 190px;
+     width: 100%;
+     background: url(../img/banner-7.jpg) no-repeat center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+/*CONFIG FOLHAS DE SEPARAÇÃO BLUES-LEAVES-5*/
+.blue-leaves-5 {
+     position: absolute;
+     z-index: 99;
+     left: 0;
+     margin-top: -175px;
+}
+
+/*SECTION BANNER-VIDEO*/
+#banner-video {
+     height: 385px;
+     width: 100%;
+     background: url(../img/banner-8.jpg) no-repeat center;
+     background-size: cover;
+}
+
+.banner-video-filtro {
+     width: 100%;
+     height: 100%;
+     background-color: rgba(30, 127, 251, 0.6);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+/*CONFIG FOOTER*/
+footer {
+     width: 100%;
+     height: 80px;
+     background-color: var(--black);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+     footer h2 {
+          color: #fff;
+          font: bold 24px Arial, Helvetica, sans-serif;
+     }    
+
+@media(max-width:769px) {
+     .container {
+          width: 600px;
+     }
+
+     #menu-toggle {
+          display: flex;
+     }
+
+     #menu {
+          justify-content: center;
+          position: absolute;
+          z-index: 999;
+          right: -800px;
+          top: 66px;
+          background-color: var(--blue);
+          width: 30%;
+          height: 100%;
+          transition: all .4s linear;
+     }
+
+     #menu nav > ul {
+          flex-direction: column;
+          gap: 20px;
+     }
+     
+          #menu li > a:hover {
+               color: #fff;
+               background-color: none;
+          }
+          
+          .ab-play-store-area > .birds-ps > img {
+               width: 140px;
+               height: 140px;
+          }
+          
+               .ab-play-store-area > .box-ps img{
+                    width: 200px;
+                    height: 170px;
+               }
+          
+               .ab-play-store-area > .box-msg {
+                    font: 700 26px 'Noto Sans', sans-serif;
+               }
+
+     .title-ab-games > h2 {
+          font: 400 60px 'Noto Sans';
+     } 
+
+     footer h2 {
+          color: #fff;
+          font: bold 18px Arial, Helvetica, sans-serif;
+     } 
+}
+
+@media(max-width:425px) {
+     .container {
+          width: 300px;
+     }
+
+     .blue-leaves {
+          height: 300px;
+     }
+     
+     .dark-leaves {
+          height: 150px;
+     }
+
+     .blue-leaves-1 {
+          margin-top: 255px;
+     }
+
+     .ab-play-store-area {
+          flex-direction: column;
+     }
+
+     .ab-play-store-area > .birds-ps{
+          position: absolute;
+          margin-bottom: 100px;
+          margin-left: 60px;
+     }
+
+     .ab-play-store-area > .birds-ps > img {
+          width: 70px;
+          height: 70px;
+     }
+     
+          .ab-play-store-area > .box-ps img{
+               width: 90px;
+               height: 120px;
+          }
+     
+          .ab-play-store-area > .box-msg {
+               font: 700 18px 'Noto Sans', sans-serif;
+          }
+
+     .title-ab-games > h2 {
+          font: 400 30px 'Noto Sans';
+     }
+}
